@@ -57,7 +57,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("https://rhhns5d11d.execute-api.ap-south-1.amazonaws.com/stageOne/hello-resource", requestOptions)
+            fetch("https://rhhns5d11d.execute-api.ap-south-1.amazonaws.com/stageOne/", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
